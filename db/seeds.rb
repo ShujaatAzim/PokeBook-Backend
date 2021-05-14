@@ -1,7 +1,7 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+print "Seeding..."
+
+user01 = User.create(username: "Shu", password: "123")
+
+card01 = Card.create(user_id: user01.id, name: "Charizard", image: "https://images.pokemontcg.io/base1/4_hires.png", owned: false, quantity: 0, notes: "My rarest card!")
+
+print "Done!"
