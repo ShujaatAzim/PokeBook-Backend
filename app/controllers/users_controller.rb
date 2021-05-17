@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
-  skip_before_action :authorized, only: [:create, :index, :show] #these are skipped for now, will remove later (only leaving create)
-
+  skip_before_action :authorized
+  
   def index
     @users = User.all
     render json: UserSerializer.new(@users).to_serialized_json
@@ -15,8 +15,11 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
     if @user.valid?
+      @user.cards.each do |card|
+        Card.create!(user_id: @user.id, name: card.name, image: card.image, owned: false, quantity: 0, notes: "")
+      end
       @token = encode_token({ user_id: @user.id })
-      render json: { id: @user.id, username: @user.username, jwt: @token, logged: true }, status: :created
+      render json: { id: @user.id, username: @user.username, cards: @user.cards, jwt: @token, logged: true }, status: :created
     else
       render json: { error: "Invalid user creation credentials" }, status: :not_acceptable
     end
@@ -29,7 +32,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password) #will add :password_confirmation later
+    params.require(:user).permit(:username, :password, :cards) #will add :password_confirmation later
   end
 
 end
