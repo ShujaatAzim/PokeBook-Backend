@@ -13,6 +13,8 @@ class CardsController < ApplicationController
   end
 
   def create
+    @card = Card.create(card_params)
+    render json: CardSerializer.new(@card).to_serialized_json
   end
 
   def update
@@ -21,4 +23,10 @@ class CardsController < ApplicationController
   def destroy
   end
 
+  private
+
+  def card_params
+    params.require(:card).permit(:user_id, :name, :image, :owned, :quantity, :notes)
+  end
+  
 end
