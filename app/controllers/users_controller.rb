@@ -13,11 +13,9 @@ class UsersController < ApplicationController
   end
   
   def create
+
     @user = User.create(user_params)
     if @user.valid?
-      @user.cards.each do |card|
-        @card = Card.create(card: {user_id: @user.id, name: card.name, image: card.image, owned: false, quantity: 0, notes: ""})
-      end
       @token = encode_token({ user_id: @user.id })
       render json: { id: @user.id, username: @user.username, cards: @user.cards, jwt: @token, logged: true }, status: :created
     else
@@ -32,7 +30,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, cards: [{:name, :image, :owned, :quantity, :notes}]) #will add :password_confirmation later
+    params.require(:user).permit(:username, :password, cards_attributes: [:name, :image, :owned, :quantity, :notes]) #will add :password_confirmation later
   end
 
 end

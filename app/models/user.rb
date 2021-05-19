@@ -4,4 +4,6 @@ class User < ApplicationRecord
   validates :username, presence: true, uniqueness: true
   has_many :cards
 
+  accepts_nested_attributes_for :cards 
+  
 end
