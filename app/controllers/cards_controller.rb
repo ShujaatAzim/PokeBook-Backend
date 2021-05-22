@@ -1,9 +1,9 @@
 class CardsController < ApplicationController
 
-  skip_before_action :authorized
+  # skip_before_action :authorized
 
   def index
-    @cards = Card.all
+    @cards = Card.where(user_id: current_user.id)
     render json: CardSerializer.new(@cards).to_serialized_json
   end
 
