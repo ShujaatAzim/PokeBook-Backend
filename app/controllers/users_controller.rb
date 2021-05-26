@@ -26,6 +26,11 @@ class UsersController < ApplicationController
     render json: { user: current_user, cards: current_user.cards }, status: :accepted
   end
 
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy
+  end
+
   private
 
   def user_params
