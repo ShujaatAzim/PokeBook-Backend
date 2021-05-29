@@ -4,6 +4,7 @@ class CreateCards < ActiveRecord::Migration[6.1]
       t.integer :user_id
       t.string :name
       t.string :image
+      t.string :set
       t.boolean :owned
       t.integer :quantity
       t.string :notes

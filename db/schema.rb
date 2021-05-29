@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 2021_05_13_232304) do
     t.integer "user_id"
     t.string "name"
     t.string "image"
+    t.string "set"
     t.boolean "owned"
     t.integer "quantity"
     t.string "notes"
