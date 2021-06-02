@@ -17,7 +17,6 @@ ActiveRecord::Schema.define(version: 2021_05_13_232304) do
     t.string "name"
     t.string "image"
     t.string "set"
-    t.boolean "owned"
     t.integer "quantity"
     t.string "notes"
     t.datetime "created_at", precision: 6, null: false
