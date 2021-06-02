@@ -18,6 +18,10 @@ class CardsController < ApplicationController
   end
 
   def update
+    @card = Card.find(params[:id])
+    @card.update(quantity: params[:quantity], notes: params[:notes])
+    @card.save
+    render json: CardSerializer.new(@card).to_serialized_json
   end
 
   def destroy
