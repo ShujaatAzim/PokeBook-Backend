@@ -1,6 +1,11 @@
 class CardsController < ApplicationController
 
-  # skip_before_action :authorized
+  skip_before_action :authorized, only: :all_cards
+
+  def all_cards
+    @cards = Card.all
+    render json: @cards.to_json
+  end
 
   def index
     @cards = Card.where(user_id: current_user.id)
