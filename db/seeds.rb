@@ -2,7 +2,7 @@ print "Seeding..."
 
 user01 = User.create(username: "Shu", password: "123")
 
-card01 = Card.create(user_id: user01.id, name: "Alakazam", set: "base", image: "https://images.pokemontcg.io/base1/1_hires.png", quantity: 3, notes: "Non-shadowless, NM condition for all.")
+card01 = Card.create(user_id: user01.id, name: "Alakazam", set: "Base Set", image: "https://images.pokemontcg.io/base1/1_hires.png", quantity: 3, notes: "Non-shadowless, NM condition for all.")
 card02 = Card.create(user_id: user01.id, name: "Blastoise", set: "base", image: "https://images.pokemontcg.io/base1/2_hires.png", quantity: 3, notes: "Non-shadowless, one stage-error, NM condition.")
 card03 = Card.create(user_id: user01.id, name: "Chansey", set: "base", image: "https://images.pokemontcg.io/base1/3_hires.png", quantity: 7, notes: "One shadowless, one damaged (crease), rest shadowed and fine.")
 card04 = Card.create(user_id: user01.id, name: "Charizard", set: "base", image: "https://images.pokemontcg.io/base1/4_hires.png", quantity: 2, notes: "Not for trade yet.")
