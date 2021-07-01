@@ -3,9 +3,11 @@ class CreateCards < ActiveRecord::Migration[6.1]
     create_table :cards do |t|
       t.integer :user_id
       t.string :name
-      t.string :image
+      t.integer :card_number
       t.string :set
+      t.string :image
       t.integer :quantity
+      t.boolean :holo
       t.string :notes
 
       t.timestamps

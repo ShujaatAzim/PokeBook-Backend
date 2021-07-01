@@ -15,9 +15,11 @@ ActiveRecord::Schema.define(version: 2021_05_13_232304) do
   create_table "cards", force: :cascade do |t|
     t.integer "user_id"
     t.string "name"
-    t.string "image"
+    t.integer "card_number"
     t.string "set"
+    t.string "image"
     t.integer "quantity"
+    t.boolean "holo"
     t.string "notes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
