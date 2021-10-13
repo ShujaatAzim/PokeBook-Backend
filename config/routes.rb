@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   post '/login', to: 'authentication#login'
   get '/profile', to: 'users#profile'
   get '/all_cards', to: 'cards#all_cards'
+  get '/:id', to: 'cards#collection'
 end
