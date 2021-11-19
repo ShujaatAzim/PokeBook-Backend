@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/profile', to: 'users#profile'
   get '/all_cards', to: 'cards#all_cards'
   get '/:id', to: 'cards#collection'
+  get '/collection/:id', to: 'users#user_cards'
 end
