@@ -8,7 +8,7 @@ class AuthenticationController < ApplicationController
         token = encode_token({ user_id: @user.id })
         render json: { id: @user.id, username: @user.username, jwt: token, cards: @user.cards, logged: true }, status: :accepted
     else
-      render json: { message: "Authentication Failed." }
+      render json: { message: "Authentication Failed." }, status: :unauthorized
     end
   end
 
@@ -18,5 +18,5 @@ class AuthenticationController < ApplicationController
     params.require(:user).permit(:username, :password)
   end
 
-
+  
 end
