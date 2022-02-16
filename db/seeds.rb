@@ -19,6 +19,7 @@ card13 = Card.create(user_id: user01.id, name: "Poliwrath", card_number: 13, set
 card14 = Card.create(user_id: user01.id, name: "Raichu", card_number: 14, set: "Base Set", image: "https://images.pokemontcg.io/base1/14_hires.png", quantity: 2, rarity: "holo", notes: "Shadowed.")
 card15 = Card.create(user_id: user01.id, name: "Venusaur", card_number: 15, set: "Base Set", image: "https://images.pokemontcg.io/base1/15_hires.png", quantity: 3, rarity: "holo", notes: "One shadowed with blue splotch error for trade, others reg shadowed.")
 card16 = Card.create(user_id: user01.id, name: "Zapdos", card_number: 16, set: "Base Set", image: "https://images.pokemontcg.io/base1/16_hires.png", quantity: 2, rarity: "holo", notes: "Shadowed.")
+# Rares here
 card17 = Card.create(user_id: user01.id, name: "Clefable", card_number: 1, set: "Jungle", image: "https://images.pokemontcg.io/base2/1_hires.png", quantity: 4, rarity: "holo", notes: "One damaged one with no symbol, one MP, rest normal.")
 card18 = Card.create(user_id: user01.id, name: "Electrode", card_number: 2, set: "Jungle", image: "https://images.pokemontcg.io/base2/2_hires.png", quantity: 4, rarity: "holo", notes: "One first edition for sale")
 card19 = Card.create(user_id: user01.id, name: "Flareon", card_number: 3, set: "Jungle", image: "https://images.pokemontcg.io/base2/3_hires.png", quantity: 2, rarity: "holo", notes: "Need third")
