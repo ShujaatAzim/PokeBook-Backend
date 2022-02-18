@@ -7,6 +7,7 @@ class CreateCards < ActiveRecord::Migration[6.1]
       t.string :set
       t.string :image
       t.integer :quantity
+      t.string :rarity
       t.boolean :holo
       t.string :notes
 

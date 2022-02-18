@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 2021_05_13_232304) do
     t.string "set"
     t.string "image"
     t.integer "quantity"
+    t.string "rarity"
     t.boolean "holo"
     t.string "notes"
     t.datetime "created_at", precision: 6, null: false
