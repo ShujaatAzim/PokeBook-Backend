@@ -3,6 +3,7 @@ print "Seeding..."
 user01 = User.create(username: "Shu", password: "123")
 user02 = User.create(username: "Test", password: "test")
 
+# Base Set
 card01 = Card.create(user_id: user01.id, name: "Alakazam", card_number: 1, set: "Base Set", image: "https://images.pokemontcg.io/base1/1_hires.png", quantity: 3, rarity: "holo", notes: "Non-shadowless, NM condition for all.")
 card02 = Card.create(user_id: user01.id, name: "Blastoise", card_number: 2, set: "Base Set", image: "https://images.pokemontcg.io/base1/2_hires.png", quantity: 3, rarity: "holo", notes: "Non-shadowless, one stage-error, NM condition.")
 card03 = Card.create(user_id: user01.id, name: "Chansey", card_number: 3, set: "Base Set", image: "https://images.pokemontcg.io/base1/3_hires.png", quantity: 7, rarity: "holo", notes: "One shadowless, one damaged (crease), rest shadowed and fine.")
@@ -20,7 +21,13 @@ card14 = Card.create(user_id: user01.id, name: "Raichu", card_number: 14, set: "
 card15 = Card.create(user_id: user01.id, name: "Venusaur", card_number: 15, set: "Base Set", image: "https://images.pokemontcg.io/base1/15_hires.png", quantity: 3, rarity: "holo", notes: "One shadowed with blue splotch error for trade, others reg shadowed.")
 card16 = Card.create(user_id: user01.id, name: "Zapdos", card_number: 16, set: "Base Set", image: "https://images.pokemontcg.io/base1/16_hires.png", quantity: 2, rarity: "holo", notes: "Shadowed.")
 card397 = Card.create(user_id: user01.id, name: "Beedrill", card_number: 17, set: "Base Set", image: "https://images.pokemontcg.io/base1/17_hires.png", quantity: 0, rarity: "rare", notes: "")
-# Rares here
+card398 = Card.create(user_id: user01.id, name: "Dragonair", card_number: 18, set: "Base Set", image: "https://images.pokemontcg.io/base1/18_hires.png", quantity: 0, rarity: "rare", notes: "")
+card399 = Card.create(user_id: user01.id, name: "Dugtrio", card_number: 19, set: "Base Set", image: "https://images.pokemontcg.io/base1/19_hires.png", quantity: 0, rarity: "rare", notes: "")
+card400 = Card.create(user_id: user01.id, name: "Electabuzz", card_number: 20, set: "Base Set", image: "https://images.pokemontcg.io/base1/20_hires.png", quantity: 0, rarity: "rare", notes: "")
+card401 = Card.create(user_id: user01.id, name: "Electrode", card_number: 21, set: "Base Set", image: "https://images.pokemontcg.io/base1/21_hires.png", quantity: 0, rarity: "rare", notes: "")
+card402 = Card.create(user_id: user01.id, name: "Pidgeotto", card_number: 22, set: "Base Set", image: "https://images.pokemontcg.io/base1/22_hires.png", quantity: 0, rarity: "rare", notes: "")
+
+# Jungle
 card17 = Card.create(user_id: user01.id, name: "Clefable", card_number: 1, set: "Jungle", image: "https://images.pokemontcg.io/base2/1_hires.png", quantity: 4, rarity: "holo", notes: "One damaged one with no symbol, one MP, rest normal.")
 card18 = Card.create(user_id: user01.id, name: "Electrode", card_number: 2, set: "Jungle", image: "https://images.pokemontcg.io/base2/2_hires.png", quantity: 4, rarity: "holo", notes: "One first edition for sale")
 card19 = Card.create(user_id: user01.id, name: "Flareon", card_number: 3, set: "Jungle", image: "https://images.pokemontcg.io/base2/3_hires.png", quantity: 2, rarity: "holo", notes: "Need third")
@@ -37,6 +44,8 @@ card29 = Card.create(user_id: user01.id, name: "Venomoth", card_number: 13, set:
 card30 = Card.create(user_id: user01.id, name: "Victreebel", card_number: 14, set: "Jungle", image: "https://images.pokemontcg.io/base2/14_hires.png", quantity: 3, rarity: "holo", notes: "Fine.")
 card31 = Card.create(user_id: user01.id, name: "Vileplume", card_number: 15, set: "Jungle", image: "https://images.pokemontcg.io/base2/15_hires.png", quantity: 4, rarity: "holo", notes: "One first edition for sale.")
 card32 = Card.create(user_id: user01.id, name: "Wigglytuff", card_number: 16, set: "Jungle", image: "https://images.pokemontcg.io/base2/16_hires.png", quantity:4, rarity: "holo", notes: "Might need one with fewer scratches, have one with surface damage for sale.")
+
+# Fossil
 card33 = Card.create(user_id: user01.id, name: "Aerodactyl", card_number: 1, set: "Fossil", image: "https://images.pokemontcg.io/base3/1_hires.png", quantity: 4, rarity: "holo", notes: "Have pre-release one for sale.")
 card34 = Card.create(user_id: user01.id, name: "Articuno", card_number: 2, set: "Fossil", image: "https://images.pokemontcg.io/base3/2_hires.png", quantity: 3, rarity: "holo", notes: "Might want one with fewer scratches, but expensive.")
 card35 = Card.create(user_id: user01.id, name: "Ditto", card_number: 3, set: "Fossil", image: "https://images.pokemontcg.io/base3/3_hires.png", quantity: 4, rarity: "holo", notes: "One first edition for sale.")
@@ -52,6 +61,8 @@ card44 = Card.create(user_id: user01.id, name: "Moltres", card_number: 12, set: 
 card45 = Card.create(user_id: user01.id, name: "Muk", card_number: 13, set: "Fossil", image: "https://images.pokemontcg.io/base3/13_hires.png", quantity: 4, rarity: "holo", notes: "One for sale.")
 card46 = Card.create(user_id: user01.id, name: "Raichu", card_number: 14, set: "Fossil", image: "https://images.pokemontcg.io/base3/14_hires.png", quantity: 2, rarity: "holo", notes: "Need one more.")
 card47 = Card.create(user_id: user01.id, name: "Zapdos", card_number: 15, set: "Fossil", image: "https://images.pokemontcg.io/base3/15_hires.png", quantity: 3, rarity: "holo", notes: "Might be interested in cosmo-foil one.")
+
+# Base Set 2
 card48 = Card.create(user_id: user01.id, name: "Alakazam", card_number: 1, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/1_hires.png", quantity: 2, rarity: "holo", notes: "Need 1 more if I go through with three of each bs2 holos.")
 card49 = Card.create(user_id: user01.id, name: "Blastoise", card_number: 2, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/2_hires.png", quantity: 1, rarity: "holo", notes: "Need 2 more but is expensive.")
 card50 = Card.create(user_id: user01.id, name: "Chansey", card_number: 3, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/3_hires.png", quantity: 2, rarity: "holo", notes: "Need 1 more.")
@@ -72,6 +83,8 @@ card64 = Card.create(user_id: user01.id, name: "Scyther", card_number: 17, set: 
 card65 = Card.create(user_id: user01.id, name: "Venusaur", card_number: 18, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/18_hires.png", quantity: 1, rarity: "holo", notes: "Need 2 more but is expensive.")
 card66 = Card.create(user_id: user01.id, name: "Wigglytuff", card_number: 19, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/19_hires.png", quantity: 2, rarity: "holo", notes: "Need 1 more.")
 card67 = Card.create(user_id: user01.id, name: "Zapdos", card_number: 20, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/20_hires.png", quantity: 1, rarity: "holo", notes: "Need 2 more if I decide.")
+
+# Team Rocket
 card68 = Card.create(user_id: user01.id, name: "Dark Alakazam", card_number: 1, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/1_hires.png", quantity: 4, rarity: "holo", notes: "Need 1st Edition, one NM and one slightly damaged one for sale (corner).")
 card69 = Card.create(user_id: user01.id, name: "Dark Arbok", card_number: 2, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/2_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
 card70 = Card.create(user_id: user01.id, name: "Dark Blastoise", card_number: 3, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/3_hires.png", quantity: 1, rarity: "holo", notes: "Need 1st Edition and regular.")
@@ -89,6 +102,8 @@ card81 = Card.create(user_id: user01.id, name: "Dark Weezing", card_number: 14, 
 card82 = Card.create(user_id: user01.id, name: "Here Comes Team Rocket!", card_number: 15, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/15_hires.png", quantity: 2, rarity: "holo", notes: "Need one regular.")
 card83 = Card.create(user_id: user01.id, name: "Rocket's Sneak Attack", card_number: 16, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/16_hires.png", quantity: 2, rarity: "holo", notes: "Need 1st Edition.")
 card84 = Card.create(user_id: user01.id, name: "Rainbow Energy", card_number: 17, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/17_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
+
+# Gym Heroes
 card85 = Card.create(user_id: user01.id, name: "Blaine's Moltres", card_number: 1, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/1_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
 card86 = Card.create(user_id: user01.id, name: "Brock's Rhydon", card_number: 2, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/2_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
 card87 = Card.create(user_id: user01.id, name: "Erika's Clefable", card_number: 3, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/3_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
@@ -108,6 +123,8 @@ card100 = Card.create(user_id: user01.id, name: "Erika", card_number: 16, set: "
 card101 = Card.create(user_id: user01.id, name: "Lt. Surge", card_number: 17, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/17_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
 card102 = Card.create(user_id: user01.id, name: "Misty", card_number: 18, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/18_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
 card103 = Card.create(user_id: user01.id, name: "The Rocket's Trap", card_number: 19, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/19_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
+
+# Gym Challenge
 card104 = Card.create(user_id: user01.id, name: "Blaine's Arcanine", card_number: 1, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/1_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
 card105 = Card.create(user_id: user01.id, name: "Blaine's Charizard", card_number: 2, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/2_hires.png", quantity: 1, rarity: "holo", notes: "Need two more, but expensive.")
 card106 = Card.create(user_id: user01.id, name: "Brock's Ninetales", card_number: 3, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/3_hires.png", quantity: 2, rarity: "holo", notes: "Need third one.")
@@ -128,6 +145,8 @@ card120 = Card.create(user_id: user01.id, name: "Blaine", card_number: 17, set: 
 card121 = Card.create(user_id: user01.id, name: "Giovanni", card_number: 18, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/18_hires.png", quantity: 3, rarity: "holo", notes: "Need third one.")
 card122 = Card.create(user_id: user01.id, name: "Koga", card_number: 19, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/19_hires.png", quantity: 1, rarity: "holo", notes: "Need two more regular ones.")
 card123 = Card.create(user_id: user01.id, name: "Sabrina", card_number: 20, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/20_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
+
+# Neo Genesis
 card124 = Card.create(user_id: user01.id, name: "Ampharos", card_number: 1, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/1_hires.png", quantity: 1, rarity: "holo", notes: "Only have one in first edition, want to sell/trade for regular ones.")
 card125 = Card.create(user_id: user01.id, name: "Azumarill", card_number: 2, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/2_hires.png", quantity: 3, rarity: "holo", notes: "Have one in first edition and one creased one, want to sell/trade for regular ones.")
 card126 = Card.create(user_id: user01.id, name: "Bellossom", card_number: 3, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/3_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
@@ -147,6 +166,8 @@ card139 = Card.create(user_id: user01.id, name: "Togetic", card_number: 16, set:
 card140 = Card.create(user_id: user01.id, name: "Typhlosion", card_number: 17, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/17_hires.png", quantity: 1, rarity: "holo", notes: "Need two more, but expensive af.")
 card141 = Card.create(user_id: user01.id, name: "Typhlosion", card_number: 18, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/18_hires.png", quantity: 2, rarity: "holo", notes: "One first edition, want to sell/trade for two regular ones.")
 card142 = Card.create(user_id: user01.id, name: "Metal Energy", card_number: 19, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/19_hires.png", quantity: 3, rarity: "holo", notes: "All set.")
+
+# Neo Discovery
 card143 = Card.create(user_id: user01.id, name: "Espeon", card_number: 1, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/1_hires.png", quantity: 1, rarity: "holo", notes: "Need two more, but might be expensive.")
 card144 = Card.create(user_id: user01.id, name: "Forretress", card_number: 2, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/2_hires.png", quantity: 1, rarity: "holo", notes: "Need two more.")
 card143 = Card.create(user_id: user01.id, name: "Hitmontop", card_number: 3, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/3_hires.png", quantity: 2, rarity: "holo", notes: "Need one more.")
@@ -164,6 +185,8 @@ card154 = Card.create(user_id: user01.id, name: "Unown A", card_number: 14, set:
 card155 = Card.create(user_id: user01.id, name: "Ursaring", card_number: 15, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/15_hires.png", quantity: 2, rarity: "holo", notes: "Need one more.")
 card156 = Card.create(user_id: user01.id, name: "Wobbuffet", card_number: 16, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/16_hires.png", quantity: 2, rarity: "holo", notes: "One creased for sale, one normal.")
 card157 = Card.create(user_id: user01.id, name: "Yanma", card_number: 17, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/17_hires.png", quantity: 1, rarity: "holo", notes: "Need two more.")
+
+# Neo Revelations
 card158 = Card.create(user_id: user01.id, name: "Ampharos", card_number: 1, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/1_hires.png", quantity:0, rarity: "holo", notes: "Need any and all!")
 card159 = Card.create(user_id: user01.id, name: "Blissey", card_number: 2, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/2_hires.png", quantity: 2, rarity: "holo", notes: "Need one more.")
 card160 = Card.create(user_id: user01.id, name: "Celebi", card_number: 3, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/3_hires.png", quantity: 0, rarity: "holo", notes: "Need any and all!")
@@ -180,6 +203,8 @@ card170 = Card.create(user_id: user01.id, name: "Raikou", card_number: 13, set: 
 card171 = Card.create(user_id: user01.id, name: "Suicune", card_number: 14, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/14_hires.png", quantity: 0, rarity: "holo", notes: "Need any and all!")
 card172 = Card.create(user_id: user01.id, name: "Shining Gyarados", card_number: 65, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/65_hires.png", quantity: 0, rarity: "holo", notes: "Need any and all, but will be VERY expensive.")
 card173 = Card.create(user_id: user01.id, name: "Shining Magikarp", card_number: 66, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/66_hires.png", quantity: 1, rarity: "holo", notes: "Only have one but it's first edition, want to sell/ttrade for normals.")
+
+# Neo Destiny
 card174 = Card.create(user_id: user01.id, name: "Dark Ampharos", card_number: 1, set: "Neo Destiny", image: "https://images.pokemontcg.io/neo4/1_hires.png", quantity: 0, rarity: "holo", notes: "Need any and all!")
 card175 = Card.create(user_id: user01.id, name: "Dark Crobat", card_number: 2, set: "Neo Destiny", image: "https://images.pokemontcg.io/neo4/2_hires.png", quantity: 1, rarity: "holo", notes: "Have only first edition, want to sell/trade for three regulars")
 card176 = Card.create(user_id: user01.id, name: "Dark Donphan", card_number: 3, set: "Neo Destiny", image: "https://images.pokemontcg.io/neo4/3_hires.png", quantity: 1, rarity: "holo", notes: "Need two more.")
@@ -205,6 +230,9 @@ card195 = Card.create(user_id: user01.id, name: "Shining Raichu", card_number: 1
 card196 = Card.create(user_id: user01.id, name: "Shining Steelix", card_number: 112, set: "Neo Destiny", image: "https://images.pokemontcg.io/neo4/112_hires.png", quantity: 0, rarity: "holo", notes: "Need any and all, but will definitely be expensive.")
 card197 = Card.create(user_id: user01.id, name: "Shining Tyranitar", card_number: 113, set: "Neo Destiny", image: "https://images.pokemontcg.io/neo4/113_hires.png", quantity: 1, rarity: "holo", notes: "Need any and all!")
 
+# TEST USER
+
+# Base Set
 card198 = Card.create(user_id: user02.id, name: "Alakazam", card_number: 1, set: "Base Set", image: "https://images.pokemontcg.io/base1/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card199 = Card.create(user_id: user02.id, name: "Blastoise", card_number: 2, set: "Base Set", image: "https://images.pokemontcg.io/base1/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card200 = Card.create(user_id: user02.id, name: "Chansey", card_number: 3, set: "Base Set", image: "https://images.pokemontcg.io/base1/3_hires.png", quantity: 0, rarity: "holo", notes: "")
@@ -221,6 +249,8 @@ card210 = Card.create(user_id: user02.id, name: "Poliwrath", card_number: 13, se
 card211 = Card.create(user_id: user02.id, name: "Raichu", card_number: 14, set: "Base Set", image: "https://images.pokemontcg.io/base1/14_hires.png", quantity: 0, rarity: "holo", notes: "")
 card212 = Card.create(user_id: user02.id, name: "Venusaur", card_number: 15, set: "Base Set", image: "https://images.pokemontcg.io/base1/15_hires.png", quantity: 0, rarity: "holo", notes: "")
 card213 = Card.create(user_id: user02.id, name: "Zapdos", card_number: 16, set: "Base Set", image: "https://images.pokemontcg.io/base1/16_hires.png", quantity: 0, rarity: "holo", notes: "")
+
+# Jungle
 card214 = Card.create(user_id: user02.id, name: "Clefable", card_number: 1, set: "Jungle", image: "https://images.pokemontcg.io/base2/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card215 = Card.create(user_id: user02.id, name: "Electrode", card_number: 2, set: "Jungle", image: "https://images.pokemontcg.io/base2/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card216 = Card.create(user_id: user02.id, name: "Flareon", card_number: 3, set: "Jungle", image: "https://images.pokemontcg.io/base2/3_hires.png", quantity: 0, rarity: "holo", notes: "")
@@ -237,6 +267,8 @@ card226 = Card.create(user_id: user02.id, name: "Venomoth", card_number: 13, set
 card227 = Card.create(user_id: user02.id, name: "Victreebel", card_number: 14, set: "Jungle", image: "https://images.pokemontcg.io/base2/14_hires.png", quantity: 0, rarity: "holo", notes: "")
 card228 = Card.create(user_id: user02.id, name: "Vileplume", card_number: 15, set: "Jungle", image: "https://images.pokemontcg.io/base2/15_hires.png", quantity: 0, rarity: "holo", notes: "")
 card229 = Card.create(user_id: user02.id, name: "Wigglytuff", card_number: 16, set: "Jungle", image: "https://images.pokemontcg.io/base2/16_hires.png", quantity: 0, rarity: "holo", notes: "")
+
+# Fossil
 card230 = Card.create(user_id: user02.id, name: "Aerodactyl", card_number: 1, set: "Fossil", image: "https://images.pokemontcg.io/base3/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card231 = Card.create(user_id: user02.id, name: "Articuno", card_number: 2, set: "Fossil", image: "https://images.pokemontcg.io/base3/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card232 = Card.create(user_id: user02.id, name: "Ditto", card_number: 3, set: "Fossil", image: "https://images.pokemontcg.io/base3/3_hires.png", quantity: 0, rarity: "holo", notes: "")
@@ -252,6 +284,8 @@ card241 = Card.create(user_id: user02.id, name: "Moltres", card_number: 12, set:
 card242 = Card.create(user_id: user02.id, name: "Muk", card_number: 13, set: "Fossil", image: "https://images.pokemontcg.io/base3/13_hires.png", quantity: 0, rarity: "holo", notes: "")
 card243 = Card.create(user_id: user02.id, name: "Raichu", card_number: 14, set: "Fossil", image: "https://images.pokemontcg.io/base3/14_hires.png", quantity: 0, rarity: "holo", notes: "")
 card244 = Card.create(user_id: user02.id, name: "Zapdos", card_number: 15, set: "Fossil", image: "https://images.pokemontcg.io/base3/15_hires.png", quantity: 0, rarity: "holo", notes: "")
+
+# Base Set 2
 card245 = Card.create(user_id: user02.id, name: "Alakazam", card_number: 1, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card246 = Card.create(user_id: user02.id, name: "Blastoise", card_number: 2, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card247 = Card.create(user_id: user02.id, name: "Chansey", card_number: 3, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/3_hires.png", quantity: 0, rarity: "holo", notes: "")
@@ -272,6 +306,8 @@ card261 = Card.create(user_id: user02.id, name: "Scyther", card_number: 17, set:
 card262 = Card.create(user_id: user02.id, name: "Venusaur", card_number: 18, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/18_hires.png", quantity: 0, rarity: "holo", notes: "")
 card263 = Card.create(user_id: user02.id, name: "Wigglytuff", card_number: 19, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/19_hires.png", quantity: 0, rarity: "holo", notes: "")
 card264 = Card.create(user_id: user02.id, name: "Zapdos", card_number: 20, set: "Base Set 2", image: "https://images.pokemontcg.io/base4/20_hires.png", quantity: 0, rarity: "holo", notes: "")
+
+# Team Rocket
 card265 = Card.create(user_id: user02.id, name: "Dark Alakazam", card_number: 1, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card266 = Card.create(user_id: user02.id, name: "Dark Arbok", card_number: 2, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card267 = Card.create(user_id: user02.id, name: "Dark Blastoise", card_number: 3, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/3_hires.png", quantity: 0, rarity: "holo", notes: "")
@@ -289,6 +325,8 @@ card278 = Card.create(user_id: user02.id, name: "Dark Weezing", card_number: 14,
 card279 = Card.create(user_id: user02.id, name: "Here Comes Team Rocket!", card_number: 15, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/15_hires.png", quantity: 0, rarity: "holo", notes: "")
 card280 = Card.create(user_id: user02.id, name: "Rocket's Sneak Attack", card_number: 16, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/16_hires.png", quantity: 0, rarity: "holo", notes: "")
 card281 = Card.create(user_id: user02.id, name: "Rainbow Energy", card_number: 17, set: "Team Rocket", image: "https://images.pokemontcg.io/base5/17_hires.png", quantity: 0, rarity: "holo", notes: "")
+
+# Gym Heroes
 card282 = Card.create(user_id: user02.id, name: "Blaine's Moltres", card_number: 1, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card283 = Card.create(user_id: user02.id, name: "Brock's Rhydon", card_number: 2, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card284 = Card.create(user_id: user02.id, name: "Erika's Clefable", card_number: 3, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/3_hires.png", quantity: 0, rarity: "holo", notes: "")
@@ -308,6 +346,8 @@ card297 = Card.create(user_id: user02.id, name: "Erika", card_number: 16, set: "
 card298 = Card.create(user_id: user02.id, name: "Lt. Surge", card_number: 17, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/17_hires.png", quantity: 0, rarity: "holo", notes: "")
 card299 = Card.create(user_id: user02.id, name: "Misty", card_number: 18, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/18_hires.png", quantity: 0, rarity: "holo", notes: "")
 card300 = Card.create(user_id: user02.id, name: "The Rocket's Trap", card_number: 19, set: "Gym Heroes", image: "https://images.pokemontcg.io/gym1/19_hires.png", quantity: 0, rarity: "holo", notes: "")
+
+# Gym Challenge
 card301 = Card.create(user_id: user02.id, name: "Blaine's Arcanine", card_number: 1, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card302 = Card.create(user_id: user02.id, name: "Blaine's Charizard", card_number: 2, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card303 = Card.create(user_id: user02.id, name: "Brock's Ninetales", card_number: 3, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/3_hires.png", quantity: 0, rarity: "holo", notes: "")
@@ -328,6 +368,8 @@ card317 = Card.create(user_id: user02.id, name: "Blaine", card_number: 17, set: 
 card318 = Card.create(user_id: user02.id, name: "Giovanni", card_number: 18, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/18_hires.png", quantity: 0, rarity: "holo", notes: "")
 card319 = Card.create(user_id: user02.id, name: "Koga", card_number: 19, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/19_hires.png", quantity: 0, rarity: "holo", notes: "")
 card320 = Card.create(user_id: user02.id, name: "Sabrina", card_number: 20, set: "Gym Challenge", image: "https://images.pokemontcg.io/gym2/20_hires.png", quantity: 0, rarity: "holo", notes: "")
+
+# Neo Genesis
 card321 = Card.create(user_id: user02.id, name: "Ampharos", card_number: 1, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card322 = Card.create(user_id: user02.id, name: "Azumarill", card_number: 2, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card323 = Card.create(user_id: user02.id, name: "Bellossom", card_number: 3, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/3_hires.png", quantity: 0, rarity: "holo", notes: "")
@@ -347,6 +389,8 @@ card336 = Card.create(user_id: user02.id, name: "Togetic", card_number: 16, set:
 card337 = Card.create(user_id: user02.id, name: "Typhlosion", card_number: 17, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/17_hires.png", quantity: 0, rarity: "holo", notes: "")
 card338 = Card.create(user_id: user02.id, name: "Typhlosion", card_number: 18, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/18_hires.png", quantity: 0, rarity: "holo", notes: "")
 card339 = Card.create(user_id: user02.id, name: "Metal Energy", card_number: 19, set: "Neo Genesis", image: "https://images.pokemontcg.io/neo1/19_hires.png", quantity: 0, rarity: "holo", notes: "")
+
+# Neo Discovery
 card340 = Card.create(user_id: user02.id, name: "Espeon", card_number: 1, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card341 = Card.create(user_id: user02.id, name: "Forretress", card_number: 2, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card342 = Card.create(user_id: user02.id, name: "Hitmontop", card_number: 3, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/3_hires.png", quantity: 0, rarity: "holo", notes: "")
@@ -364,6 +408,8 @@ card353 = Card.create(user_id: user02.id, name: "Unown A", card_number: 14, set:
 card354 = Card.create(user_id: user02.id, name: "Ursaring", card_number: 15, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/15_hires.png", quantity: 0, rarity: "holo", notes: "")
 card355 = Card.create(user_id: user02.id, name: "Wobbuffet", card_number: 16, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/16_hires.png", quantity: 0, rarity: "holo", notes: "")
 card356 = Card.create(user_id: user02.id, name: "Yanma", card_number: 17, set: "Neo Discovery", image: "https://images.pokemontcg.io/neo2/17_hires.png", quantity: 0, rarity: "holo", notes: "")
+
+# Neo Revelations
 card357 = Card.create(user_id: user02.id, name: "Ampharos", card_number: 1, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card358 = Card.create(user_id: user02.id, name: "Blissey", card_number: 2, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card359 = Card.create(user_id: user02.id, name: "Celebi", card_number: 3, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/3_hires.png", quantity: 0, rarity: "holo", notes: "")
@@ -380,6 +426,8 @@ card369 = Card.create(user_id: user02.id, name: "Raikou", card_number: 13, set: 
 card370 = Card.create(user_id: user02.id, name: "Suicune", card_number: 14, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/14_hires.png", quantity: 0, rarity: "holo", notes: "")
 card371 = Card.create(user_id: user02.id, name: "Shining Gyarados", card_number: 65, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/65_hires.png", quantity: 0, rarity: "holo", notes: "")
 card372 = Card.create(user_id: user02.id, name: "Shining Magikarp", card_number: 66, set: "Neo Revelations", image: "https://images.pokemontcg.io/neo3/66_hires.png", quantity: 0, rarity: "holo", notes: "")
+
+# Neo Destiny
 card373 = Card.create(user_id: user02.id, name: "Dark Ampharos", card_number: 1, set: "Neo Destiny", image: "https://images.pokemontcg.io/neo4/1_hires.png", quantity: 0, rarity: "holo", notes: "")
 card374 = Card.create(user_id: user02.id, name: "Dark Crobat", card_number: 2, set: "Neo Destiny", image: "https://images.pokemontcg.io/neo4/2_hires.png", quantity: 0, rarity: "holo", notes: "")
 card375 = Card.create(user_id: user02.id, name: "Dark Donphan", card_number: 3, set: "Neo Destiny", image: "https://images.pokemontcg.io/neo4/3_hires.png", quantity: 0, rarity: "holo", notes: "")
