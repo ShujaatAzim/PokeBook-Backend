@@ -26,6 +26,7 @@ card399 = Card.create(user_id: user01.id, name: "Dugtrio", card_number: 19, set:
 card400 = Card.create(user_id: user01.id, name: "Electabuzz", card_number: 20, set: "Base Set", image: "https://images.pokemontcg.io/base1/20_hires.png", quantity: 0, rarity: "rare", notes: "")
 card401 = Card.create(user_id: user01.id, name: "Electrode", card_number: 21, set: "Base Set", image: "https://images.pokemontcg.io/base1/21_hires.png", quantity: 0, rarity: "rare", notes: "")
 card402 = Card.create(user_id: user01.id, name: "Pidgeotto", card_number: 22, set: "Base Set", image: "https://images.pokemontcg.io/base1/22_hires.png", quantity: 0, rarity: "rare", notes: "")
+card403 = Card.create(user_id: user01.id, name: "Pidgeotto", card_number: 23, set: "Base Set", image: "https://images.pokemontcg.io/base1/23_hires.png", quantity: 0, rarity: "uncommon", notes: "")
 
 # Jungle
 card17 = Card.create(user_id: user01.id, name: "Clefable", card_number: 1, set: "Jungle", image: "https://images.pokemontcg.io/base2/1_hires.png", quantity: 4, rarity: "holo", notes: "One damaged one with no symbol, one MP, rest normal.")
