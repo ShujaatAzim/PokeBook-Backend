@@ -39,7 +39,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, cards_attributes: [:name, :image, :set, :quantity, :rarity, :notes]) #will add :password_confirmation later
+    params.require(:user).permit(:username, :password, cards_attributes: [:name, :image, :set, :card_number, :card_type, :quantity, :rarity, :notes]) #will add :password_confirmation later
   end
 
 end

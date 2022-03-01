@@ -4,11 +4,11 @@ class CreateCards < ActiveRecord::Migration[6.1]
       t.integer :user_id
       t.string :name
       t.integer :card_number
+      t.string :card_type
       t.string :set
       t.string :image
       t.integer :quantity
       t.string :rarity
-      t.boolean :holo
       t.string :notes
 
       t.timestamps
