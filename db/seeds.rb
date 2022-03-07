@@ -124,6 +124,9 @@ card29 = Card.create(user_id: user01.id, name: "Venomoth", card_number: 13, set:
 card30 = Card.create(user_id: user01.id, name: "Victreebel", card_number: 14, set: "Jungle", card_type: "pokemon", image: "https://images.pokemontcg.io/base2/14_hires.png", quantity: 3, rarity: "holo", notes: "Fine.")
 card31 = Card.create(user_id: user01.id, name: "Vileplume", card_number: 15, set: "Jungle", card_type: "pokemon", image: "https://images.pokemontcg.io/base2/15_hires.png", quantity: 4, rarity: "holo", notes: "One first edition for sale.")
 card32 = Card.create(user_id: user01.id, name: "Wigglytuff", card_number: 16, set: "Jungle", card_type: "pokemon", image: "https://images.pokemontcg.io/base2/16_hires.png", quantity:4, rarity: "holo", notes: "Might need one with fewer scratches, have one with surface damage for sale.")
+card483 = Card.create(user_id: user01.id, name: "Clefable", card_number: 17, set: "Jungle", card_type: "pokemon", image: "https://images.pokemontcg.io/base2/17_hires.png", quantity: 1, rarity: "rare", notes: "")
+card484 = Card.create(user_id: user01.id, name: "Electrode", card_number: 18, set: "Jungle", card_type: "pokemon", image: "https://images.pokemontcg.io/base2/18_hires.png", quantity: 1, rarity: "rare", notes: "")
+
 
 # Fossil
 card33 = Card.create(user_id: user01.id, name: "Aerodactyl", card_number: 1, set: "Fossil", card_type: "pokemon", image: "https://images.pokemontcg.io/base3/1_hires.png", quantity: 4, rarity: "holo", notes: "Have pre-release one for sale.")
