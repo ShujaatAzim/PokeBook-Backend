@@ -19,6 +19,7 @@ class UsersController < ApplicationController
   
   def create
     @user = User.create(user_params)
+    DeckPrepopulation.call(@user)
     if @user.valid?
       @token = encode_token({ user_id: @user.id })
       render json: { id: @user.id, username: @user.username, cards: @user.cards, jwt: @token, logged: true }, status: :created
@@ -39,7 +40,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:username, :password, cards_attributes: [:name, :image, :set, :card_number, :card_type, :quantity, :rarity, :notes]) #will add :password_confirmation later
+    params.require(:user).permit(:username, :password) #will add :password_confirmation later
   end
 
 end
