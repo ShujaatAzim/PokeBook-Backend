@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'home#index'
   resources :cards
   resources :users
   resources :users, only: [:index, :show, :create, :destroy]
