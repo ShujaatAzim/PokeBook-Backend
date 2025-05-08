@@ -8,20 +8,21 @@ class ApplicationController < ActionController::API
 
   
   def secret
-    secret = ENV['SECRET_KEY_BASE'] || Rails.application.secrets.secret_key_base
-  end
+    ENV['SECRET_KEY_BASE'] || Rails.application.credentials.secret_key_base
+  end  
 
 
   def encode_token(payload)
-    JWT.encode(payload, secret)
-  end
+    JWT.encode(payload, secret, 'HS256')
+  end  
 
 
   def decoded_token
     if auth_header
       token = auth_header.split(' ')[1]
       begin
-        JWT.decode(token, secret, true, algorithm: 'HS256')
+        decoded = JWT.decode(token, secret, true, algorithm: 'HS256')
+        return decoded
       rescue JWT::DecodeError
         nil
       end
@@ -31,6 +32,7 @@ class ApplicationController < ActionController::API
   def current_user
     if decoded_token
       user_id = decoded_token[0]['user_id']
+      puts "DECODED USER ID: #{user_id}"
       @user = User.find_by(id: user_id)
     end
   end
